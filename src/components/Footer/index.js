@@ -20,8 +20,6 @@ function Footer(){
                         <nav className="menu-footer">
                             <ul>
                                 <li><Link to = '/'>Início</Link></li>
-                                <li><Link to = '/cardapio'>Cardápio</Link></li>
-                                <li><Link to = '/pedido'>Pedido</Link></li>
                                 <li><Link to = '/galeria'>Galeria</Link></li>
                                 <li><Link to = '/contato'>Contato</Link></li>
                             </ul>

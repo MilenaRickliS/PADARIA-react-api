@@ -27,8 +27,6 @@ function Header(){
                 <nav ref={navRef}>
                     <ul>
                         <li><Link to = '/'>Início</Link></li>
-                        <li><Link to = '/cardapio'>Cardápio</Link></li>
-                        <li><Link to = '/pedido'>Pedido</Link></li>
                         <li><Link to = '/galeria'>Galeria</Link></li>
                     </ul>
                     <div onClick={showNavbar} className="nav-btn nav-close-btn">
@@ -39,6 +37,9 @@ function Header(){
                 <div className="btn-contato">
                     <Link to = '/contato'>
                         <button>Contato</button>
+                    </Link>
+                    <Link to = '/login'>
+                        <button>Login</button>
                     </Link>
                 </div>
                 
