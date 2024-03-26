@@ -1,0 +1,271 @@
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+/* ESTILO DO SOBRE */
+section.sobre {
+  padding: 80px 4%;
+}
+
+section.sobre .flex {
+  align-items: center;
+  gap: 60px;
+}
+h2.titulo {
+    color: #000;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #EEE1B3;
+}
+/* tabela carrinho de compras */
+.carrinho{
+  border-radius: 15px; 
+  box-shadow: 0px 5px 10px #696969;
+  padding: 30px;
+}
+.cart-table {
+    margin-top: 50px;
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+  .table-head-item {
+    text-align: start;
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 6px;
+    text-transform: uppercase;
+  }
+  
+  .second-col,
+  .third-col {
+    width: 26%;
+  }
+  
+  .cart-product td {
+    padding: 8px 0;
+  }
+  
+  .product-identification {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-product-image {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .cart-product-title {
+    margin-left: 16px;
+    font-size: 18px;
+  }
+  
+  .cart-product-price {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .product-qtd-input {
+    width: 48px;
+    height: 34px;
+    border-radius: 6px;
+    border: 2px solid var(--blue);
+    text-align: center;
+    background: #eee;
+  }
+  
+  .remove-product-button {
+    margin-left: 12px;
+    background: #ff0000;
+    color: var(--white);
+    padding: 10px 8px;
+    border: 0;
+    border-radius: 6px;
+  
+    transition: filter 0.2s;
+  }
+  
+  .remove-product-button:hover {
+    filter: brightness(0.8);
+  }
+  
+  .cart-total-container {
+    border-top: 1px solid var(--gray);
+    text-align: end;
+    padding: 6px 16px 0 0;
+    font-size: 18px;
+  }
+  
+  .cart-total-container strong {
+    margin-right: 12px;
+  }
+  
+  .purchase-button {
+    display: flex;
+    margin: 24px auto 0;
+    background: #F7F2DE;
+    color: #000;
+    border: 0;
+    border-radius: 6px;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+  
+    transition: filter 0.2s;
+  }
+  
+
+
+@media screen and (max-width: 1020px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato, .menu-footer{
+        display: none;
+    }
+    .btn-abrir-menu {
+        display: block;
+    }
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* ESPECIALIDADES */
+    section.especiliadades {
+        padding: 40px 8%;
+    }
+
+    /* SOBRE */
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+    
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /* PORTFÓLIO */
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    
+    section.portfolio .flex {
+       gap: 60px;
+    }
+
+    /* GALERIA */
+    section.galeria {
+        padding: 80px 8%;
+    }
+
+    .img-g {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    
+    section.galeria .flex {
+       gap: 60px;
+    }
+
+    .img-g:hover {
+        transform: scale(1.05);
+    }
+
+    /* RODAPÉ */
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+    /* LOGIN */
+    .container-login {
+        min-width: 300px;
+        margin: 60px 10px ;
+        
+    }
+    /* CARRINHO */
+    .cart-product-title {
+        margin-top: 6px;
+      }
+    
+      .product-qtd-input {
+        display: block;
+        margin: 0 auto;
+      }
+    
+      .remove-product-button {
+        display: block;
+        margin: 8px auto 0;
+      }
+}
+@media screen and (min-width: 1020px) {
+    .video{
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    /* LOGIN */
+    .container-login {
+        min-width: 200px;
+        margin: 60px 10px ;
+        
+    }
+}
